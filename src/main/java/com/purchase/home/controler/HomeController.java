@@ -12,5 +12,11 @@ public class HomeController {
 		return "Welcome";
 
 	}
+	
+	@GetMapping("/all")
+	public String getAllItems() {
+		return "all items";
+
+	}
 
 }
