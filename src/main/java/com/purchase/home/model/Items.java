@@ -11,11 +11,11 @@ import javax.persistence.Table;
 @Table(name = "item")
 public class Items {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column
+	@Column(name="item")
 	private String item;
-	@Column
+	@Column(name="status")
 	private String status;
 	@Column(name="needfor")
 	private int needFor;
