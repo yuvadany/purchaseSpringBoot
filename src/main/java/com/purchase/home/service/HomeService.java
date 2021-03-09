@@ -10,4 +10,5 @@ import com.purchase.home.model.Items;
 public interface HomeService {
 
 	public List<Items> getAllItems();
+	public List<Items> findByPerson(int person_id);
 } 

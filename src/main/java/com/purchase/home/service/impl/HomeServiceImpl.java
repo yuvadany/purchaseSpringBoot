@@ -21,4 +21,10 @@ public class HomeServiceImpl implements HomeService {
 		return homeRepo.findAll();
 	}
 
+	@Override
+	public List<Items> findByPerson(int person_id) {
+		// TODO Auto-generated method stub
+		return homeRepo.findByNeedFor(person_id);
+	}
+
 }

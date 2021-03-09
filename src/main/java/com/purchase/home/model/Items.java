@@ -1,5 +1,6 @@
 package com.purchase.home.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,9 +13,12 @@ public class Items {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
+	@Column
 	private String item;
+	@Column
 	private String status;
-	private int need_for;
+	@Column(name="needfor")
+	private int needFor;
 	public int getId() {
 		return id;
 	}
@@ -33,11 +37,11 @@ public class Items {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public int getNeed_for() {
-		return need_for;
+	public int getNeedFor() {
+		return needFor;
 	}
-	public void setNeed_for(int need_for) {
-		this.need_for = need_for;
+	public void setNeedFor(int needFor) {
+		this.needFor = needFor;
 	}
 
 }
