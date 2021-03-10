@@ -43,4 +43,11 @@ public class HomeServiceImpl implements HomeService {
 		return items.get();
 	}
 
+	@Override
+	public List<Items> deleteItem(Items item) {
+		// TODO Auto-generated method stub
+		homeRepo.deleteById(item.getId());
+		return homeRepo.findAll();
+	}
+
 }

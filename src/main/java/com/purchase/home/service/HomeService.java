@@ -15,5 +15,7 @@ public interface HomeService {
 
 	public List<Items> addItem(Items item);
 
-	public  Items updateStatus(Items item);
+	public Items updateStatus(Items item);
+
+	public List<Items> deleteItem(Items item);
 }
