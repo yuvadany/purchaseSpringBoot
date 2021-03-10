@@ -45,4 +45,10 @@ public class HomeController {
 
 	}
 
+	@PostMapping(path = "/updateStatus", consumes = "application/json")
+	public  Items updateStatus(@RequestBody Items item) {
+		return homeService.updateStatus(item);
+
+	}
+
 }

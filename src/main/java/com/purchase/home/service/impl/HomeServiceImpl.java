@@ -1,6 +1,7 @@
 package com.purchase.home.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,8 +31,16 @@ public class HomeServiceImpl implements HomeService {
 	@Override
 	public List<Items> addItem(Items item) {
 		// TODO Auto-generated method stub
-		 homeRepo.save(item);
-		 return homeRepo.findAll();
+		homeRepo.save(item);
+		return homeRepo.findAll();
+	}
+
+	@Override
+	public Items updateStatus(Items item) {
+		// TODO Auto-generated method stub
+		homeRepo.save(item);
+		Optional<Items> items = homeRepo.findById(item.getId());
+		return items.get();
 	}
 
 }
