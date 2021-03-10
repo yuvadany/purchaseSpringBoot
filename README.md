@@ -1,12 +1,15 @@
 # purchaseSpringBoot
 ---------------------------------
-Added Below:
+Added Below Apis:
 Purchase - 
 getAll Items,
 update Item,
 Delete Item,
-Add Item
+Add Item,
+FindBy Person ID/needFor
+------------------------
 Swagger UI
+http://localhost:9988/swagger-ui.html
 only added on pom.xml
 ------------------------
 <dependency>
@@ -24,4 +27,4 @@ spring.datasource.url=jdbc:mysql://localhost:3306/home
 spring.datasource.username=root
 spring.datasource.password=admin
 
-http://localhost:9988/swagger-ui.html
+
