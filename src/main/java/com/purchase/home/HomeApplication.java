@@ -9,7 +9,7 @@ public class HomeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HomeApplication.class, args);
-		System.out.println("Home App started...");
+		System.out.println("Home Purchase App started...");
 	}
 
 }
