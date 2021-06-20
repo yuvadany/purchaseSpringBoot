@@ -7,11 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class HomeApplication {
-	private static Logger logger = LoggerFactory.getLogger(HomeApplication.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(HomeApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(HomeApplication.class, args);
-		logger.info("... Purchase - Home App Started ..");
+		System.out.println("--HomeApplication---");
+		LOGGER.info("Info level log message");
+        LOGGER.debug("Debug level log message");
+        LOGGER.error("Error level log message");
 	}
 
 }

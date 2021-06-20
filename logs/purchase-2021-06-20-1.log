@@ -1,0 +1,44 @@
+2021-06-20T16:34:36.236+0200 INFO Starting HomeApplication using Java 11.0.9.1 on yuvi2007-PC with PID 8964 (E:\learning\purchaseSpringBoot\target\classes started by yuvi2007 in E:\learning\purchaseSpringBoot)
+2021-06-20T16:34:36.519+0200 DEBUG Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-06-20T16:34:36.531+0200 INFO No active profile set, falling back to default profiles: default
+2021-06-20T16:35:05.178+0200 INFO Started HomeApplication in 31.857 seconds (JVM running for 40.301)
+2021-06-20T16:35:05.237+0200 INFO Info level log message
+2021-06-20T16:35:05.237+0200 DEBUG Debug level log message
+2021-06-20T16:35:05.237+0200 ERROR Error level log message
+2021-06-20T16:36:24.717+0200 INFO getAllItems()
+2021-06-20T16:36:43.394+0200 INFO addItem(@RequestBody Items item) 
+2021-06-20T16:37:17.194+0200 INFO Starting HomeApplication using Java 11.0.9.1 on yuvi2007-PC with PID 3772 (E:\learning\purchaseSpringBoot\target\classes started by yuvi2007 in E:\learning\purchaseSpringBoot)
+2021-06-20T16:37:17.205+0200 DEBUG Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-06-20T16:37:17.206+0200 INFO No active profile set, falling back to default profiles: default
+2021-06-20T16:37:23.648+0200 INFO Started HomeApplication in 6.912 seconds (JVM running for 8.989)
+2021-06-20T16:37:23.679+0200 INFO Info level log message
+2021-06-20T16:37:23.679+0200 DEBUG Debug level log message
+2021-06-20T16:37:23.679+0200 ERROR Error level log message
+2021-06-20T16:39:04.387+0200 INFO addItem(@RequestBody Items item) 
+2021-06-20T16:39:09.932+0200 INFO getAllItems()
+2021-06-20T16:40:19.668+0200 INFO Starting HomeApplication using Java 11.0.9.1 on yuvi2007-PC with PID 4868 (E:\learning\purchaseSpringBoot\target\classes started by yuvi2007 in E:\learning\purchaseSpringBoot)
+2021-06-20T16:40:19.686+0200 DEBUG Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-06-20T16:40:19.688+0200 INFO No active profile set, falling back to default profiles: default
+2021-06-20T16:40:26.493+0200 INFO Started HomeApplication in 7.627 seconds (JVM running for 10.471)
+2021-06-20T16:40:26.501+0200 INFO Info level log message
+2021-06-20T16:40:26.501+0200 DEBUG Debug level log message
+2021-06-20T16:40:26.501+0200 ERROR Error level log message
+2021-06-20T16:40:33.180+0200 INFO getAllItems()
+2021-06-20T16:40:33.524+0200 INFO [com.purchase.home.model.Items@36bace, com.purchase.home.model.Items@19094a5, com.purchase.home.model.Items@8e45f8, com.purchase.home.model.Items@be6722, com.purchase.home.model.Items@1e5779d, com.purchase.home.model.Items@71f038, com.purchase.home.model.Items@8ececb, com.purchase.home.model.Items@12c2fcf]
+2021-06-20T16:40:43.126+0200 INFO getAllItems()
+2021-06-20T16:40:43.144+0200 INFO [com.purchase.home.model.Items@1df8bfe, com.purchase.home.model.Items@17a4d58, com.purchase.home.model.Items@139c5a7, com.purchase.home.model.Items@1ea64e5, com.purchase.home.model.Items@db839d, com.purchase.home.model.Items@1341493, com.purchase.home.model.Items@d3d33f, com.purchase.home.model.Items@14ac53a]
+2021-06-20T16:40:43.558+0200 INFO getAllItems()
+2021-06-20T16:40:43.595+0200 INFO [com.purchase.home.model.Items@113de3c, com.purchase.home.model.Items@645ee1, com.purchase.home.model.Items@14373a0, com.purchase.home.model.Items@1d6bbe1, com.purchase.home.model.Items@177759, com.purchase.home.model.Items@2aa62c, com.purchase.home.model.Items@d80afa, com.purchase.home.model.Items@e1b433]
+2021-06-20T16:40:44.086+0200 INFO getAllItems()
+2021-06-20T16:40:44.104+0200 INFO [com.purchase.home.model.Items@da2c03, com.purchase.home.model.Items@9438a5, com.purchase.home.model.Items@15f5ce1, com.purchase.home.model.Items@8b72f8, com.purchase.home.model.Items@1dee59e, com.purchase.home.model.Items@daa090, com.purchase.home.model.Items@1df423e, com.purchase.home.model.Items@52f5cf]
+2021-06-20T16:40:44.378+0200 INFO getAllItems()
+2021-06-20T16:40:44.395+0200 INFO [com.purchase.home.model.Items@17a97f1, com.purchase.home.model.Items@b5d6d8, com.purchase.home.model.Items@de4a8b, com.purchase.home.model.Items@15e5950, com.purchase.home.model.Items@7e9a55, com.purchase.home.model.Items@fb8ad4, com.purchase.home.model.Items@f507d2, com.purchase.home.model.Items@15c4f45]
+2021-06-20T16:41:18.311+0200 INFO Starting HomeApplication using Java 11.0.9.1 on yuvi2007-PC with PID 1944 (E:\learning\purchaseSpringBoot\target\classes started by yuvi2007 in E:\learning\purchaseSpringBoot)
+2021-06-20T16:41:18.324+0200 DEBUG Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-06-20T16:41:18.326+0200 INFO No active profile set, falling back to default profiles: default
+2021-06-20T16:41:25.021+0200 INFO Started HomeApplication in 7.206 seconds (JVM running for 9.218)
+2021-06-20T16:41:25.030+0200 INFO Info level log message
+2021-06-20T16:41:25.030+0200 DEBUG Debug level log message
+2021-06-20T16:41:25.030+0200 ERROR Error level log message
+2021-06-20T16:41:36.164+0200 INFO getAllItems()
+2021-06-20T16:41:36.468+0200 INFO [com.purchase.home.model.Items@e3c8cf, com.purchase.home.model.Items@4969d7, com.purchase.home.model.Items@cfa880, com.purchase.home.model.Items@168c6ef, com.purchase.home.model.Items@ccc09e, com.purchase.home.model.Items@11a0741, com.purchase.home.model.Items@ba2f8a, com.purchase.home.model.Items@122c04c]

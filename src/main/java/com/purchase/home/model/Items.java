@@ -11,7 +11,13 @@ import javax.persistence.Table;
 @Table(name = "item")
 public class Items {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	/*
+	 * @GeneratedValue(strategy = GenerationType.SEQUENCE , generator = "items_seq")
+	 * 
+	 * @SequenceGenerator(name = "items_seq", sequenceName = "items_seq",
+	 * allocationSize = 5)
+	 */
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	@Column(name = "item")
 	private String item;
@@ -51,5 +57,12 @@ public class Items {
 	public void setNeedFor(int needFor) {
 		this.needFor = needFor;
 	}
+
+	@Override
+	public String toString() {
+		return "Items [id=" + id + ", item=" + item + ", status=" + status + ", needFor=" + needFor + "]";
+	}
+	
+		
 
 }

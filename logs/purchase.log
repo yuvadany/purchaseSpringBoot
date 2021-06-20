@@ -1,9 +1,16 @@
-"2021-May-04 07:33:16 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=10h42m554ms117µs368ns).
-""2021-May-04 07:34:05 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=49s188ms576µs306ns).
-""2021-May-04 10:16:25 [HikariPool-3 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1h39m18s559ms687µs299ns).
-""2021-May-04 10:58:16 [RMI TCP Connection(305)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-""2021-May-04 10:58:16 [RMI TCP Connection(305)-127.0.0.1] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-""2021-May-04 10:58:16 [RMI TCP Connection(305)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-""2021-May-04 10:58:16 [RMI TCP Connection(305)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
-""2021-May-04 10:58:17 [RMI TCP Connection(305)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
-"
+2021-06-20T16:41:39.450+0200 INFO addItem(@RequestBody Items item) 
+2021-06-20T16:41:41.222+0200 INFO addItem(@RequestBody Items item) 
+2021-06-20T16:41:43.913+0200 INFO getAllItems()
+2021-06-20T16:41:43.947+0200 INFO [com.purchase.home.model.Items@eec1eb, com.purchase.home.model.Items@12bee1a, com.purchase.home.model.Items@1a09fcd, com.purchase.home.model.Items@1bd1a0c, com.purchase.home.model.Items@1ea6fc9, com.purchase.home.model.Items@1651190, com.purchase.home.model.Items@a0b946, com.purchase.home.model.Items@148bca4, com.purchase.home.model.Items@1540d63, com.purchase.home.model.Items@9a6648]
+2021-06-20T16:43:30.925+0200 INFO Starting HomeApplication using Java 11.0.9.1 on yuvi2007-PC with PID 7196 (E:\learning\purchaseSpringBoot\target\classes started by yuvi2007 in E:\learning\purchaseSpringBoot)
+2021-06-20T16:43:30.932+0200 DEBUG Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-06-20T16:43:30.933+0200 INFO No active profile set, falling back to default profiles: default
+2021-06-20T16:43:37.545+0200 INFO Started HomeApplication in 6.989 seconds (JVM running for 8.736)
+2021-06-20T16:43:37.552+0200 INFO Info level log message
+2021-06-20T16:43:37.552+0200 DEBUG Debug level log message
+2021-06-20T16:43:37.552+0200 ERROR Error level log message
+2021-06-20T16:43:50.108+0200 INFO getAllItems()
+2021-06-20T16:43:50.371+0200 INFO [Items [id=1, item=toy Car, status=done, needFor=3], Items [id=2, item=toy Car, status=done, needFor=3], Items [id=3, item=toy Car, status=done, needFor=3], Items [id=4, item=toy Car, status=done, needFor=3], Items [id=5, item=toy Car, status=done, needFor=3], Items [id=6, item=toy Car, status=done, needFor=3], Items [id=7, item=toy Car, status=done, needFor=3], Items [id=8, item=toy Car, status=done, needFor=3], Items [id=9, item=toy Car, status=done, needFor=3], Items [id=10, item=toy Car, status=done, needFor=3]]
+2021-06-20T16:43:58.532+0200 INFO getAllItems()
+2021-06-20T16:43:58.550+0200 INFO [Items [id=1, item=toy Car, status=done, needFor=3], Items [id=2, item=toy Car, status=done, needFor=3], Items [id=3, item=toy Car, status=done, needFor=3], Items [id=4, item=toy Car, status=done, needFor=3], Items [id=5, item=toy Car, status=done, needFor=3], Items [id=6, item=toy Car, status=done, needFor=3], Items [id=7, item=toy Car, status=done, needFor=3], Items [id=8, item=toy Car, status=done, needFor=3], Items [id=9, item=toy Car, status=done, needFor=3], Items [id=10, item=toy Car, status=done, needFor=3]]
+2021-06-20T16:44:11.190+0200 INFO addItem(@RequestBody Items item) 

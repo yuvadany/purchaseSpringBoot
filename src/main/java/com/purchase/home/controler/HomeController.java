@@ -19,7 +19,7 @@ import com.purchase.home.service.HomeService;
 
 @RestController
 //@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin
+//@CrossOrigin
 @RequestMapping("/v1/purchase")
 public class HomeController {
 	private static Logger logger = LoggerFactory.getLogger(HomeController.class);
@@ -36,6 +36,7 @@ public class HomeController {
 	@GetMapping("/all")
 	public List<Items> getAllItems() {
 		logger.info("getAllItems()");
+		logger.info(homeService.getAllItems().toString());
 		return homeService.getAllItems();
 
 	}
