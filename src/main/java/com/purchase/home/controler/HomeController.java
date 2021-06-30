@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.purchase.home.advice.ItemNotFoundException;
 import com.purchase.home.model.Items;
 import com.purchase.home.service.HomeService;
 
@@ -59,7 +60,7 @@ public class HomeController {
 		if (items.isPresent())
 			return ResponseEntity.status(HttpStatus.OK).headers(headers).body(items);
 		else
-			throw new NullPointerException();
+			throw new ItemNotFoundException(id);
 
 	}
 
@@ -72,7 +73,7 @@ public class HomeController {
 		if (!item.isEmpty())
 			return ResponseEntity.status(HttpStatus.OK).headers(headers).body(item);
 		else
-			throw new NullPointerException();
+			throw new ItemNotFoundException(person_id);
 	}
 
 	/*
