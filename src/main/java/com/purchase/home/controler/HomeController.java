@@ -1,10 +1,14 @@
 package com.purchase.home.controler;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,45 +31,95 @@ public class HomeController {
 	private HomeService homeService;
 
 	@GetMapping
-	public String welcome() {
+	public ResponseEntity<String> welcome() {
+		String greetings = "Welcome...";
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("content", "welcome");
 		logger.info("welcome()");
-		return "Welcome...";
+		return ResponseEntity.status(HttpStatus.OK).headers(headers).body(greetings);
 
 	}
 
 	@GetMapping("/all")
-	public List<Items> getAllItems() {
+	public ResponseEntity<List<Items>> getAllItems() {
 		logger.info("getAllItems()");
-		logger.info(homeService.getAllItems().toString());
-		return homeService.getAllItems();
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "get All Items");
+		var lists = homeService.getAllItems();
+		return ResponseEntity.status(HttpStatus.OK).headers(headers).body(lists);
+
+	}
+
+	@GetMapping("/item/{id}")
+	public ResponseEntity<Optional<Items>> getItemById(@PathVariable int id) {
+		logger.info("getItemById()");
+		var items = homeService.findById(id);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "get item by id");
+		if (items.isPresent())
+			return ResponseEntity.status(HttpStatus.OK).headers(headers).body(items);
+		else
+			throw new NullPointerException();
 
 	}
 
 	@GetMapping("/{person_id}")
-	public List<Items> getItemByPerson(@PathVariable int person_id) {
+	public ResponseEntity<List<Items>> getItemByPerson(@PathVariable int person_id) {
 		logger.info("getItemByPerson(@PathVariable int person_id) ");
-		return homeService.findByPerson(person_id);
-
+		var item = homeService.findByPerson(person_id);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "get item by id");
+		if (!item.isEmpty())
+			return ResponseEntity.status(HttpStatus.OK).headers(headers).body(item);
+		else
+			throw new NullPointerException();
 	}
 
+	/*
+	 * @PostMapping(path = "/addItem", consumes = "application/json") public
+	 * List<Items> addItem(@RequestBody Items item) {
+	 * logger.info("addItem(@RequestBody Items item) "); return
+	 * homeService.addItem(item);
+	 * 
+	 * }
+	 */
+
 	@PostMapping(path = "/addItem", consumes = "application/json")
-	public List<Items> addItem(@RequestBody Items item) {
+	public ResponseEntity<List<Items>> addItem(@RequestBody Items item) {
 		logger.info("addItem(@RequestBody Items item) ");
-		return homeService.addItem(item);
+		var items = homeService.addItem(item);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "adding Item");
+		return ResponseEntity.status(HttpStatus.CREATED).headers(headers).body(items);
 
 	}
 
 	@PostMapping(path = "/updateStatus", consumes = "application/json")
-	public Items updateStatus(@RequestBody Items item) {
+	public ResponseEntity<Items> updateStatus(@RequestBody Items item) {
 		logger.info(" updateStatus(@RequestBody Items item) ) ");
-		return homeService.updateStatus(item);
-
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "updating Item");
+		var items = homeService.updateStatus(item);
+		return ResponseEntity.status(HttpStatus.CREATED).headers(headers).body(items);
 	}
 
 	@DeleteMapping(path = "/deleteItem", consumes = "application/json")
-	public List<Items> deleteItem(@RequestBody Items item) {
+	public ResponseEntity<List<Items>> deleteItem(@RequestBody Items item) {
 		logger.info(" deleteItem(@RequestBody Items item) ");
-		return homeService.deleteItem(item);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "updating Item");
+		var items = homeService.deleteItem(item);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).headers(headers).body(items);
+
+	}
+
+	@DeleteMapping(path = "/delete/{id}", consumes = "application/json")
+	public ResponseEntity<List<Items>> deleteItemById(@PathVariable int id) {
+		logger.info(" deleteItem(@RequestBody Items item) ");
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("type", "updating Item");
+		var items = homeService.deleteByItem(id);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).headers(headers).body(items);
 
 	}
 
