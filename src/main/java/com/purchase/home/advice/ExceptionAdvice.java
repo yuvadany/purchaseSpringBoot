@@ -24,7 +24,7 @@ public class ExceptionAdvice extends ResponseEntityExceptionHandler {
         errors.setTimestamp(LocalDateTime.now());
         errors.setError(ex.getMessage());
         errors.setStatus(status.value());
-        return ResponseEntity.status(status.value()).body(errors); 
+        return ResponseEntity.status(status.value()).body(errors);
 	}
 
 	// Let Spring BasicErrorController handle the exception, we just override the status code
