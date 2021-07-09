@@ -10,6 +10,15 @@ import javax.persistence.Table;
 @Entity(name = "item")
 @Table(name = "item")
 public class Items {
+
+	public Items(int id, String item, String status, int needFor) {
+		super();
+		this.id = id;
+		this.item = item;
+		this.status = status;
+		this.needFor = needFor;
+	}
+
 	@Id
 	/*
 	 * @GeneratedValue(strategy = GenerationType.SEQUENCE , generator = "items_seq")
@@ -17,7 +26,7 @@ public class Items {
 	 * @SequenceGenerator(name = "items_seq", sequenceName = "items_seq",
 	 * allocationSize = 5)
 	 */
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Column(name = "item")
 	private String item;
@@ -62,7 +71,5 @@ public class Items {
 	public String toString() {
 		return "Items [id=" + id + ", item=" + item + ", status=" + status + ", needFor=" + needFor + "]";
 	}
-	
-		
 
 }
