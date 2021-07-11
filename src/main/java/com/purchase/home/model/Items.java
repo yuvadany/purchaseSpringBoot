@@ -19,6 +19,11 @@ public class Items {
 		this.needFor = needFor;
 	}
 
+	public Items() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	@Id
 	/*
 	 * @GeneratedValue(strategy = GenerationType.SEQUENCE , generator = "items_seq")
